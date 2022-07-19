@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FF6060;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/************ deplacer vers le CSS de Flat **********/
+/****************************************************/
+body {
+    margin: 1rem;
+}
+
+.flatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    margin-left: 2rem;
+}
+
+.menuItem {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.heroImage {
+    display: flex;
+}
+
+.heroImage img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+.flatInfos {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
