@@ -37,10 +37,12 @@
   }
 }
 
+@import url("https://p.typekit.net/p.css?s=1&k=umb2cff&ht=tk&f=16353.37461.37466.37467.37478.37479.37484.37485&a=4243334&app=typekit&e=css");
 /************ deplacer vers le CSS de Flat **********/
 /****************************************************/
 body {
     margin: 1rem;
+    font-family: 'montserrat';
 }
 
 .flatHeader {
@@ -53,6 +55,7 @@ body {
 }
 
 .menuItem {
+    font-size: 1.5rem;
     margin-left: 2rem;
     text-decoration: none;
     color: #FF6060;
@@ -84,4 +87,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.flatInfos h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.flatInfos h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
 }

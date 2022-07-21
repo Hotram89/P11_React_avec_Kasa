@@ -7,7 +7,7 @@ class Flat extends Component {
     super(props);
     this.state = {
       name: null,
-      describe: "coucou je mets tous le descriptif de la villa ici",
+      describe: "coucou je mets tous le descriptif de la villa ici ou la",
       isToggleOn: true,
     };
   }
@@ -18,6 +18,12 @@ class Flat extends Component {
         return { name: "villa", city: "Paris" };
       });
     }, 2000);
+    console.log("c ou");
+    fetch("./data/logements.json")
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+      });
   }
 
   handleClick() {
