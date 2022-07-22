@@ -17,11 +17,6 @@ function App() {
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <Flat></Flat>
-    //   </header>
-    // </div>
   );
 }
 

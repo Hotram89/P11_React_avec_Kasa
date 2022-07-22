@@ -8,10 +8,16 @@ const Navigation = () => {
       <header className="flatHeader">
         <img src={companyLogo} alt="logo Kasa" />
         <ul className="menu">
-          <NavLink to="/">
+          <NavLink
+            to="/"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
             <li className="menuItem">Accueil</li>
           </NavLink>
-          <NavLink to="/about">
+          <NavLink
+            to="/about"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
             <li className="menuItem">A propos</li>
           </NavLink>
         </ul>
