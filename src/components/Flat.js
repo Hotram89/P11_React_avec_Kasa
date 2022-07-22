@@ -1,6 +1,6 @@
 import { Component } from "react";
-import companyLogo from "../assets/LOGO.png";
 import livingRoom from "../assets/flat_greenplants.png";
+import Navigation from "./Navigation";
 
 class Flat extends Component {
   constructor(props) {
@@ -39,19 +39,8 @@ class Flat extends Component {
     ) : (
       <>
         <div>
-          <header className="flatHeader">
-            <img src={companyLogo} alt="logo Kasa" />
-            <nav className="menu">
-              <a className="menuItem" href="www.google.com">
-                Accueil
-              </a>
-              <a className="menuItem" href="www.wikipedia.org">
-                A Propos
-              </a>{" "}
-            </nav>
-          </header>
-
           <main>
+            <Navigation />
             <div className="heroImage">
               <img src={livingRoom} alt="living room" />
             </div>
