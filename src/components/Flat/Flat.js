@@ -1,6 +1,6 @@
 import { Component } from "react";
-import livingRoom from "../assets/flat_greenplants.png";
-import Navigation from "./Navigation";
+import livingRoom from "../../assets/flat_greenplants.png";
+import Navigation from "../Navigation";
 import "./Flat.css";
 
 class Flat extends Component {
