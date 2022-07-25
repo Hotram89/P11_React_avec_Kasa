@@ -1,10 +1,9 @@
 import React from "react";
-import Navigation from "../../components/Navigation";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div>
-      <Navigation />
       <h1>ACCUEIL</h1>
       <section className="heroImg"></section>
       <section className="gallery">

@@ -1,23 +1,14 @@
 import React from "react";
-import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer/Footer";
+import Dropdown from "../../components/Ui/dropdown/dropdown";
 
 const About = () => {
   return (
     <div>
-      <Navigation />
-      <h1>A propos</h1>
-      <br />
-      <li>Fiabilité</li>
-      <p>
-        {" "}
-        Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-        photos sont conformes aux logements, et toutes les informations sont
-        régulièrement vérifiées par nos équipes.
-      </p>
-      <li>Respect</li>
-      <li>Service</li>
-      <li>Sécurité</li>
-      <p>lorem ipsum dolor sit</p>
+      <Dropdown title="Fiabilité" />
+      <Dropdown title="Respect" />
+      <Dropdown title="Service" />
+      <Dropdown title="Responsabiité" />
     </div>
   );
 };

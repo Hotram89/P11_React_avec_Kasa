@@ -1,0 +1,31 @@
+figure {
+    height: 340px;
+    width: 340px;
+    background-color: #FF6060;
+    position: relative;
+    border-radius: 10px;
+    background: #FF6060 linear-gradient(transparent 50%, rgba(0,0,0, 0.7));
+}
+
+.gallery {
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+    }
+
+.heroImg {
+    height: 223px;
+    border-radius: 25px;
+    background-color: #61dafb;
+}
+
+figcaption {
+    position: absolute;
+    color: white;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
