@@ -1,11 +1,12 @@
 import React from "react";
+import Banner from "../../components/Ui/banner/banner";
 import "./Home.css";
+import backgroundHome from "../../assets/baie.png";
 
 const Home = () => {
   return (
     <div>
-      <h1>ACCUEIL</h1>
-      <section className="heroImg"></section>
+      <Banner src={backgroundHome} alt="brouillard" />
       <section className="gallery">
         <a href="./Flat">
           <figure>

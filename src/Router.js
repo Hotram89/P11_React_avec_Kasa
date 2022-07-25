@@ -4,8 +4,8 @@ import Home from "./routes/Home/Home";
 import About from "./routes/About/About";
 import ErrorPage from "./routes/Error/ErrorPage";
 import Flat from "./components/Flat/Flat";
-import Navigation from "./components/Navigation";
 import Footer from "./components/Footer/Footer";
+import Navigation from "./components/Ui/Navigation/Navigation";
 
 const Router = () => {
   return (

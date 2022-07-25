@@ -2,7 +2,6 @@
 @import url("https://p.typekit.net/p.css?s=1&k=umb2cff&ht=tk&f=16353.37461.37466.37467.37478.37479.37484.37485&a=4243334&app=typekit&e=css");
 
 body {
-    margin: 4rem;
     font-family: 'montserrat';
     color: #FF6060;
 }
@@ -10,7 +9,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 4rem;
 }
 
 .nav-active {

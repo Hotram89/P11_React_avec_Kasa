@@ -1,6 +1,7 @@
 import React from "react";
-import companyLogoBlanc from "../assets/LOGO.png";
+import companyLogoBlanc from "../../../assets/LOGO.png";
 import { NavLink } from "react-router-dom";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (

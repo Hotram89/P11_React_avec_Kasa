@@ -13,12 +13,6 @@ figure {
     margin-bottom: 2rem;
     }
 
-.heroImg {
-    height: 223px;
-    border-radius: 25px;
-    background-color: #61dafb;
-}
-
 figcaption {
     position: absolute;
     color: white;

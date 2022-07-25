@@ -1,0 +1,25 @@
+.heroImg {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.heroImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+}
+
+.heroImg::before {
+    content: "...";
+    color: transparent;
+    position: absolute;
+    height: 223px;
+    width: 93.4%;
+    width: calc(100% - 127px);
+    border-radius: 25px;
+    background-color: #000000;
+    opacity: 0.3;
+} 
