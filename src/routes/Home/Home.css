@@ -11,13 +11,46 @@ figure {
     background-color: #F7F7F7;
     border-radius: 25px;
     margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
     }
 
 figcaption {
     position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 0 0 10px 10px;
+    bottom: 0rem;
+    left: 0rem;
+    background: linear-gradient(transparent 50%, rgba(0,0,0, 0.7));
+}
+
+figcaption h2 {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 300;
     color: white;
-    bottom: 1rem;
-    left: 1rem;
+}
+
+figure img {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+figure img:after {
+    content: "...";
+    background: #FF6060 linear-gradient(transparent 50%, rgba(0,0,0, 0.7));
+
 }
 
 a {
