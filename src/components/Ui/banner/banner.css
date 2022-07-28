@@ -1,4 +1,5 @@
 .heroImg {
+    position: relative;
     height: 223px;
     width: 100%;
     border-radius: 25px;
@@ -19,7 +20,18 @@
     height: 223px;
     width: 93.4%;
     width: calc(100% - 127px);
+    width: 100%;
     border-radius: 25px;
     background-color: #000000;
     opacity: 0.3;
 } 
+
+.textOption {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+}

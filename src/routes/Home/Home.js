@@ -4,24 +4,23 @@ import "./Home.css";
 import backgroundHome from "../../assets/baie.png";
 import ApiProvider from "../../data/ApiProvider";
 import data from "../../data/logements.json";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
   const appartList = data;
 
+  const bannerInfos = {
+    altText: "brouillard",
+    bannerText: "Chez vous, partout et ailleurs",
+    img: backgroundHome,
+  };
+
   return (
     <div>
-      <Banner src={backgroundHome} alt="brouillard" />
-      <ApiProvider />
+      <Banner src={bannerInfos} />
       <section className="gallery">
         {appartList.map((appt, index) => (
-          <a href="./Flat">
-            <figure>
-              <img src={appt.cover} alt="{appt.title}" />
-              <figcaption key={`${appt.id}-${index}`}>
-                <h2>{appt.title}</h2>
-              </figcaption>
-            </figure>
-          </a>
+          <Card key={appt.id} appt={appt} />
         ))}
       </section>
     </div>

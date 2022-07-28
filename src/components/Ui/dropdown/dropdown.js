@@ -9,7 +9,6 @@ export default class Dropdown extends Component {
   }
 
   render() {
-    console.log(this.title);
     return (
       <div className="dropdown-large">
         <h2 className="dropdown-title">{this.title} </h2>

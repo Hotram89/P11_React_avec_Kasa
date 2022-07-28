@@ -3,16 +3,18 @@ import React from "react";
 import "./banner.css";
 
 export default class Banner extends Component {
-  constructor({ src, altText }) {
+  constructor(props) {
     super();
-    this.src = src;
-    this.alt = altText;
+    this.src = props.src.img;
+    this.alt = props.src.altText;
+    this.bannerText = props.src.bannerText;
   }
 
   render() {
     return (
       <div className="heroImg">
         <img src={this.src} alt={this.alt} />
+        <h1 className="textOption">{this.bannerText}</h1>
       </div>
     );
   }
