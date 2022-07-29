@@ -1,3 +1,22 @@
 .navigation {
     margin: 4rem;
 }
+
+.flatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 2rem;
+    list-style: none;
+    display: flex;
+}
+
+.menuItem {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #FF6060;
+}

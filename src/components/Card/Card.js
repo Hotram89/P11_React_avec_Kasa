@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <a href="./Flat">
+    <a href="./Rent">
       <figure>
         <img src={props.appt.cover} alt={props.appt.title} />
         <figcaption>

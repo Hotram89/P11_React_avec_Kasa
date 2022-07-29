@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "../../components/Ui/banner/banner";
 import "./Home.css";
 import backgroundHome from "../../assets/baie.png";
-import ApiProvider from "../../data/ApiProvider";
 import data from "../../data/logements.json";
 import Card from "../../components/Card/Card";
 

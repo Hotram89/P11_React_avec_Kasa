@@ -18,7 +18,6 @@ class Flat extends Component {
         return { name: "villa", city: "Paris" };
       });
     }, 2000);
-    console.log("c ou");
     fetch("./data/logements.json")
       .then((res) => res.json())
       .then((result) => {

@@ -1,10 +1,16 @@
-import { Component } from "react";
-import data from "./logements.json";
+import logements from "./logements.json";
 
-class ApiProvider extends Component {
-  componentDidMount() {
-    console.log(data);
-    return data;
+class ApiProvider {
+  static async getLogementsById(id) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const result = logements.find((element) => element.id === id);
+        if (result === undefined) {
+          reject("Not found");
+        }
+        resolve(result);
+      }, 1000);
+    });
   }
 }
 
