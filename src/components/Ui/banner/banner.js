@@ -1,6 +1,6 @@
 import { Component } from "react";
 import React from "react";
-import "./banner.css";
+import "./Banner.css";
 
 export default class Banner extends Component {
   constructor(props) {

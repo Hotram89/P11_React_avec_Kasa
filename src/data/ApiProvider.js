@@ -1,7 +1,7 @@
 import logements from "./logements.json";
 
 class ApiProvider {
-  static async getLogementsById(id) {
+  static async getLogementById(id) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const result = logements.find((element) => element.id === id);

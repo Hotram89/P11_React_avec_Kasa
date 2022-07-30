@@ -1,7 +1,7 @@
 import React from "react";
-import backgroundAbout from "../../assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.png";
-import Banner from "../../components/Ui/banner/banner";
-import Dropdown from "../../components/Ui/dropdown/dropdown";
+import backgroundAbout from "assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.png";
+import Banner from "components/Ui/Banner/Banner";
+import Dropdown from "components/Ui/Dropdown/Dropdown";
 import "./About.css";
 
 const About = () => {

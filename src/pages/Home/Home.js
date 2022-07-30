@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "../../components/Ui/banner/banner";
+import Banner from "components/Ui/Banner/Banner";
 import "./Home.css";
-import backgroundHome from "../../assets/baie.png";
-import data from "../../data/logements.json";
-import Card from "../../components/Card/Card";
+import backgroundHome from "assets/baie.png";
+import data from "data/logements.json";
+import Card from "components/Card/Card";
 
 const Home = () => {
   const appartList = data;

@@ -1,16 +1,4 @@
 
-.flatInfos_Content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.flatInfos_bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 .dropdown-open {
     width: 100%;
 
@@ -27,25 +15,6 @@
     font-weight: 300;
 }
 
-.taglist {
-    display: flex;
-}
-
-.tag {
-    width: 115px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-right: 0.5rem;
-    font-size: 14px;
-    list-style: none;
-    font-weight: 200;
-    background-color: #FF6060;
-    color: white;
-}
-
 .heroImage {
     display: flex;
     margin-top: 1rem;
@@ -58,19 +27,3 @@
 }
 
 
-.flatInfos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.flatInfos h1 {
-    font-size: 36px;
-    font-size: 2.25rem;
-    font-weight: 300;
-    margin-bottom: 0;
-}
-.flatInfos h2 {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
