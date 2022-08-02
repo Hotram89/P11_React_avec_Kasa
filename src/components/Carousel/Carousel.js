@@ -1,12 +1,13 @@
-import { Navigate } from "react-router-dom";
 import livingRoom from "assets/flat_greenplants.png";
+import "./Carousel.css";
 
 const { Component } = require("react");
 
 class Carousel extends Component {
   constructor(props) {
     super(props);
-    this.state = { pictures: null, loading: true };
+    this.state = { pictures: props.pictures, loading: true };
+    console.log(this.state);
   }
 
   componentDidMount() {}
@@ -14,7 +15,9 @@ class Carousel extends Component {
   render() {
     return (
       <div className="heroImage">
-        <img src={livingRoom} alt="living room" />
+        {this.state.pictures.map((picture, index) => (
+          <img src={picture} alt="living room" />
+        ))}
       </div>
     );
   }

@@ -1,10 +1,10 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import ApiProvider from "data/ApiProvider";
-import { useLocation } from "react-router";
 import Carousel from "components/Carousel/Carousel";
 import Presentation from "components/Presentation/Presentation";
 import Dropdown from "components/Ui/Dropdown/Dropdown";
+import "./Rents.css";
 
 class Rent extends React.Component {
   constructor(props) {
@@ -16,15 +16,12 @@ class Rent extends React.Component {
   componentDidMount() {
     ApiProvider.getLogementById(window.location.pathname.split("/").pop())
       .then((data) => {
-        console.log("ok");
         this.setState({ rent: data });
       })
       .catch((error) => {
-        console.log("ko");
         this.setState({ error: true });
       })
       .finally(() => {
-        console.log("finally");
         this.setState({ loading: false });
       });
   }
@@ -36,14 +33,12 @@ class Rent extends React.Component {
       <Navigate to="/error" />
     ) : (
       <>
-        <Carousel />
+        <Carousel pictures={this.state.rent.pictures} />
         <Presentation rent={this.state.rent} />
         <div className="flatInfos_Content">
-          <Dropdown title="Description" />
-          <Dropdown title="Equipements" />
+          <Dropdown title={"Description"} rent={this.state.rent.description} />
+          <Dropdown title="Equipements" rent={this.state.rent.equipments} />
         </div>
-
-        {this.state.rent.description}
 
         {/* Avoir du code comme ceci
                 <Carousel pictures={this.state.rent.pictures} />

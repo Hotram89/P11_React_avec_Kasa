@@ -15,15 +15,4 @@
     font-weight: 300;
 }
 
-.heroImage {
-    display: flex;
-    margin-top: 1rem;
-}
-
-.heroImage img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
 
