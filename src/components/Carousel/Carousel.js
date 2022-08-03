@@ -16,7 +16,7 @@ class Carousel extends Component {
     return (
       <div className="heroImage">
         {this.state.pictures.map((picture, index) => (
-          <img src={picture} alt="living room" />
+          <img key={index} src={picture} alt="living room" />
         ))}
       </div>
     );

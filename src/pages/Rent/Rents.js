@@ -37,7 +37,10 @@ class Rent extends React.Component {
         <Presentation rent={this.state.rent} />
         <div className="flatInfos_Content">
           <Dropdown title={"Description"} rent={this.state.rent.description} />
-          <Dropdown title="Equipements" rent={this.state.rent.equipments} />
+          <Dropdown
+            title="Equipements"
+            rent={this.state.rent.equipments.join("\n")}
+          />
         </div>
 
         {/* Avoir du code comme ceci
