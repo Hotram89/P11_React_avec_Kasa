@@ -18,3 +18,9 @@ main {
 .nav-active {
     text-decoration: underline #FF6060;
 }
+
+button {
+    background-color: transparent;
+    border: none;
+
+}

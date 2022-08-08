@@ -1,4 +1,4 @@
-import livingRoom from "assets/flat_greenplants.png";
+import BtnSlider from "./BtnSlider";
 import "./Carousel.css";
 
 const { Component } = require("react");
@@ -12,12 +12,21 @@ class Carousel extends Component {
 
   componentDidMount() {}
 
+  nextSlide() {}
+
+  prevSlide() {}
+
   render() {
     return (
-      <div className="heroImage">
-        {this.state.pictures.map((picture, index) => (
-          <img key={index} src={picture} alt="living room" />
-        ))}
+      <div className="container-slider">
+        {this.state.pictures.map((picture, index) => {
+          return (
+            <div className="slide">
+              <img key={index} src={picture} alt="living room" />
+            </div>
+          );
+        })}
+        <BtnSlider />
       </div>
     );
   }

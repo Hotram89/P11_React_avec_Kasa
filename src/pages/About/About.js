@@ -4,22 +4,28 @@ import Banner from "components/Ui/Banner/Banner";
 import Dropdown from "components/Ui/Dropdown/Dropdown";
 import "./About.css";
 
-const About = () => {
-  const bannerInfos = {
-    altText: "sommets enneigés",
-    bannerText: "",
-    img: backgroundAbout,
-  };
+class About extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { rent: null, loading: true };
+  }
 
-  return (
-    <div className="about">
-      <Banner src={bannerInfos} />
-      <Dropdown title="Fiabilité" />
-      <Dropdown title="Respect" />
-      <Dropdown title="Service" />
-      <Dropdown title="Responsabiité" />
-    </div>
-  );
-};
+  render() {
+    const bannerInfos = {
+      altText: "sommets enneigés",
+      bannerText: "",
+      img: backgroundAbout,
+    };
+    return (
+      <div className="about">
+        <Banner src={bannerInfos} />
+        <Dropdown title="Fiabilité" />
+        <Dropdown title="Respect" />
+        <Dropdown title="Service" />
+        <Dropdown title="Responsabiité" />
+      </div>
+    );
+  }
+}
 
 export default About;

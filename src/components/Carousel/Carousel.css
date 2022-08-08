@@ -1,11 +1,30 @@
-.heroImage {
+.container-slider {
     display: flex;
+    height: 415px;
+    align-items: center;
+
     margin-top: 1rem;
+    box-shadow: 0.2rem 0.6rem 1rem rgb(147, 10, 10);
 }
 
-.heroImage img {
+.slide img {
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 415px;
+    
 }
 
+.btn-slide {
+    width: 47px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-slide img {
+    width: 47px;
+    height: 80px;
+}
