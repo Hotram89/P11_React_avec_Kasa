@@ -1,32 +1,69 @@
 import BtnSlider from "./BtnSlider";
 import "./Carousel.css";
+import ApiProvider from "data/ApiProvider";
 
 const { Component } = require("react");
 
 class Carousel extends Component {
   constructor(props) {
     super(props);
-    this.state = { pictures: props.pictures, loading: true };
-    console.log(this.state);
+    this.state = {
+      pictures: props.pictures,
+      currentSlideIndex: 0,
+      loading: true,
+    };
   }
 
-  componentDidMount() {}
+  nextSlide() {
+    if (this.state.currentSlideIndex !== this.state.pictures.length - 1) {
+      this.setState({
+        currentSlideIndex: this.state.currentSlideIndex + 1,
+      });
+    } else if (
+      this.state.currentSlideIndex ===
+      this.state.pictures.length - 1
+    ) {
+      this.setState({
+        currentSlideIndex: 0,
+      });
+    }
+  }
 
-  nextSlide() {}
-
-  prevSlide() {}
+  prevSlide() {
+    if (this.state.currentSlideIndex !== 0) {
+      this.setState({
+        currentSlideIndex: this.state.currentSlideIndex - 1,
+      });
+    } else if (this.state.currentSlideIndex === 0) {
+      this.setState({
+        currentSlideIndex: this.state.pictures.length - 1,
+      });
+    }
+  }
 
   render() {
-    return (
+    return !this.state.pictures ? (
+      <div>Aucune image</div>
+    ) : (
       <div className="container-slider">
-        {this.state.pictures.map((picture, index) => {
-          return (
-            <div className="slide">
-              <img key={index} src={picture} alt="living room" />
-            </div>
-          );
-        })}
-        <BtnSlider />
+        <BtnSlider
+          onclick={() => {
+            this.prevSlide();
+          }}
+          direction="prev"
+        />
+        <div className="slide">
+          <img
+            src={this.state.pictures[this.state.currentSlideIndex]}
+            alt="living room"
+          />
+        </div>
+        <BtnSlider
+          onclick={() => {
+            this.nextSlide();
+          }}
+          direction="next"
+        />
       </div>
     );
   }

@@ -4,10 +4,23 @@ import leftArrow from "assets/arrowLeft.svg";
 import "./Carousel.css";
 
 class BtnSlider extends Component {
+  constructor(props) {
+    super(props);
+    this.direction = props.direction;
+    this.moveSlide = props.onclick;
+  }
   render() {
     return (
-      <button className="btn-slide">
-        <img src={rightArrow} alt="right clic" />
+      <button
+        onClick={this.moveSlide}
+        className={
+          this.direction === "next" ? "btn-slide next" : "btn-slide prev"
+        }
+      >
+        <img
+          src={this.direction === "next" ? rightArrow : leftArrow}
+          alt="right clic"
+        />
       </button>
     );
   }

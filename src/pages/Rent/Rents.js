@@ -10,7 +10,7 @@ class Rent extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { rent: null, loading: true };
+    this.state = { rent: null, loading: true, error: false };
   }
 
   componentDidMount() {
@@ -35,10 +35,10 @@ class Rent extends React.Component {
       <>
         <Carousel pictures={this.state.rent.pictures} />
         <Presentation rent={this.state.rent} />
-        <div className="flatInfos_Content">
+        <div className="flat-infos-content">
           <Dropdown title={"Description"} rent={this.state.rent.description} />
           <Dropdown
-            title="Equipements"
+            title={"Equipements"}
             rent={this.state.rent.equipments.join("\n")}
           />
         </div>

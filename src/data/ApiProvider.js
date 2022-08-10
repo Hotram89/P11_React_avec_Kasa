@@ -12,6 +12,16 @@ class ApiProvider {
       }, 1000);
     });
   }
+
+  static async getSlidesByLogementId(id) {
+    let logement = this.getLogementById(id);
+    return logement.pictures;
+  }
+
+  static async getAboutInfos() {
+    let infos = logements;
+    return infos;
+  }
 }
 
 export default ApiProvider;

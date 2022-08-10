@@ -5,7 +5,6 @@ import "./Presentation.css";
 export default class Presentation extends Component {
   constructor(props) {
     super();
-    console.log(props);
     this.title = props.rent.title;
     this.city = props.rent.location;
     this.tagList = props.rent.tags;

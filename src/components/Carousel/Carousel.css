@@ -1,10 +1,12 @@
 .container-slider {
     display: flex;
-    height: 415px;
     align-items: center;
-
     margin-top: 1rem;
-    box-shadow: 0.2rem 0.6rem 1rem rgb(147, 10, 10);
+}
+
+.slide {
+    height: 415px;
+    width: 100%;
 }
 
 .slide img {
@@ -28,3 +30,16 @@
     width: 47px;
     height: 80px;
 }
+
+.next {
+    right: 6rem;
+    position: absolute;
+    z-index: 10;
+}
+
+.prev{
+    z-index: 20;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
