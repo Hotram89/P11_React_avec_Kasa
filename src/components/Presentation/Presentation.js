@@ -1,6 +1,7 @@
 import { Component } from "react";
 import star from "assets/starRate.svg";
 import "./Presentation.css";
+import Rating from "components/Rating/Rating";
 
 export default class Presentation extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ export default class Presentation extends Component {
     this.tagList = props.rent.tags;
     this.profilPicture = props.rent.host.picture;
     this.profilName = props.rent.host.name;
+    this.stars = props.rent.rating;
   }
 
   render() {
@@ -35,13 +37,7 @@ export default class Presentation extends Component {
             <img src={this.profilPicture} alt={" photo of" + this.profilName} />
           </figure>
 
-          <span className="rate">
-            <img src={star} alt="etoile" />
-            <img src={star} alt="etoile" />
-            <img src={star} alt="etoile" />
-            <img src={star} alt="etoile" />
-            <img src={star} alt="etoile" />
-          </span>
+          <Rating stars={this.stars} />
         </div>
       </section>
     );
