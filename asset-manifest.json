@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/P11_React_avec_Kasa/static/css/main.116ab7f7.css",
-    "main.js": "/P11_React_avec_Kasa/static/js/main.8002fb78.js",
+    "main.js": "/P11_React_avec_Kasa/static/js/main.3a5da41a.js",
     "static/js/787.1b2a24d7.chunk.js": "/P11_React_avec_Kasa/static/js/787.1b2a24d7.chunk.js",
     "static/media/gustavo-alves-YOXSC4zRcxw-unsplash 1.png": "/P11_React_avec_Kasa/static/media/gustavo-alves-YOXSC4zRcxw-unsplash 1.e8cc81c1db153c8dac8c.png",
     "static/media/baie.png": "/P11_React_avec_Kasa/static/media/baie.024f945a990ae17b81b7.png",
@@ -13,11 +13,11 @@
     "static/media/starEmpty.svg": "/P11_React_avec_Kasa/static/media/starEmpty.7e4ba6032d7d80ecc30aa389973cef95.svg",
     "static/media/starFull.svg": "/P11_React_avec_Kasa/static/media/starFull.6430150c126a3adf92c132c52c9c7428.svg",
     "main.116ab7f7.css.map": "/P11_React_avec_Kasa/static/css/main.116ab7f7.css.map",
-    "main.8002fb78.js.map": "/P11_React_avec_Kasa/static/js/main.8002fb78.js.map",
+    "main.3a5da41a.js.map": "/P11_React_avec_Kasa/static/js/main.3a5da41a.js.map",
     "787.1b2a24d7.chunk.js.map": "/P11_React_avec_Kasa/static/js/787.1b2a24d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.116ab7f7.css",
-    "static/js/main.8002fb78.js"
+    "static/js/main.3a5da41a.js"
   ]
 }
