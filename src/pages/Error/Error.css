@@ -15,3 +15,20 @@
     margin: 2.125rem;
     font-weight: 300;
 }
+
+@media (max-width: 599px) {
+    .title {
+        margin-top: 4rem;
+        font-size: 96px;
+    }
+
+    .errorInfos h1 {
+        margin-top: 15rem;
+    }
+
+    .errorInfos h2 {
+        margin: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+}

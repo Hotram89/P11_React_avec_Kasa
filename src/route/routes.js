@@ -10,7 +10,7 @@ const routes = [
     exact: true,
   },
   {
-    path: "/rent/:rendId",
+    path: "/Rent/:id",
     element: <Rent />,
     exact: true,
   },

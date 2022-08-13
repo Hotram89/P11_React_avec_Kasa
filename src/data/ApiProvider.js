@@ -22,6 +22,10 @@ class ApiProvider {
     let infos = logements;
     return infos;
   }
+
+  static async getLogements() {
+    return logements;
+  }
 }
 
 export default ApiProvider;

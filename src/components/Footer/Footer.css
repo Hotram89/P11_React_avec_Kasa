@@ -9,6 +9,7 @@ footer  {
     color: white;
     font-weight: 200;
     margin-left: 0;
+    position: absolute;
 }
 
 footer img {

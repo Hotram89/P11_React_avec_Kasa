@@ -43,3 +43,28 @@
     margin-left: 2rem;
 }
 
+@media (max-width: 599px) {
+    .btn-slide {
+        height: 20px;
+    }
+
+    .btn-slide img {
+        height: 20px;
+    }
+
+    .next {
+        right: 1rem;
+    }
+
+    .prev {
+        margin-left: 1rem;
+    }
+
+    .slide {
+        height: 255px;
+    }
+    .slide img {
+        height: 255px;
+        
+    }
+}

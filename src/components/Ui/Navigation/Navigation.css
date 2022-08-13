@@ -20,3 +20,18 @@
     text-decoration: none;
     color: #FF6060;
 }
+
+@media (max-width: 599px) {
+
+    .menuItem {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .flatHeader img {
+        height: 43px;
+    }
+
+    .navigation {
+        margin: 20px;
+    }
+}

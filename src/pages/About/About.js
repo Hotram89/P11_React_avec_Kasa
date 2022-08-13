@@ -3,7 +3,6 @@ import backgroundAbout from "assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.png";
 import Banner from "components/Ui/Banner/Banner";
 import Dropdown from "components/Ui/Dropdown/Dropdown";
 import "./About.css";
-import ApiProvider from "data/ApiProvider";
 
 class About extends React.Component {
   constructor(props) {

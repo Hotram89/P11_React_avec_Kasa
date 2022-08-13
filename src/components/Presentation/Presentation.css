@@ -18,6 +18,7 @@
 .taglist {
     display: flex;
     margin-top: 1.4rem;
+    flex-wrap: wrap;
 }
 
 .tag {
@@ -28,12 +29,16 @@
     align-items: center;
     border-radius: 10px;
     margin-right: 0.5rem;
+    margin-top: 0.5rem;
     font-size: 14px;
     list-style: none;
     font-weight: 300;
     padding: 0 1rem;
     background-color: #FF6060;
     color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .flatInfos_bar {
@@ -79,4 +84,39 @@
     height: 30px;
     margin-left: 1rem;
 
+}
+
+@media (max-width: 599px) {
+    .flatInfos h1 {
+        font-size: 18px;
+    }
+    .flatInfos h2 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .flatInfos {
+       flex-direction: column;
+    }
+
+    .host {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .rate img {
+        width: 15px;
+        height: 15px;
+        margin-left: 0.5rem;
+    }
+    
+    .host-identity {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .host-identity {
+        max-width: 50px;
+    }
 }

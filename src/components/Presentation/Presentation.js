@@ -1,5 +1,4 @@
 import { Component } from "react";
-import star from "assets/starRate.svg";
 import "./Presentation.css";
 import Rating from "components/Rating/Rating";
 

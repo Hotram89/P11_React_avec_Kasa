@@ -8,3 +8,14 @@
 .flat-infos-content .dropdown-large {
     width: 50%;
 }
+
+@media (max-width: 599px) {
+    .flat-infos-content {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .flat-infos-content .dropdown-large {
+        width: 100%;
+    }
+}

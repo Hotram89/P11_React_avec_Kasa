@@ -7,12 +7,18 @@
 body {
     font-family: 'montserrat';
     color: #FF6060;
+    height: 100%;
+    position: relative;
 }
 
 main {
     display: flex;
     flex-direction: column;
     margin: 4rem;
+    margin-bottom: 0;
+    min-height:100%;
+    position: relative;
+    padding-bottom: 209px;
 }
 
 .nav-active {
@@ -32,4 +38,11 @@ ul {
 
 li {
     list-style: none;
+}
+
+@media (max-width: 599px) {
+    main {
+        margin: 20px;
+        margin-bottom: 0;
+    }
 }

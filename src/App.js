@@ -1,3 +1,4 @@
+import Footer from "components/Footer/Footer";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Navigation from "./components/Ui/Navigation/Navigation";
@@ -10,6 +11,7 @@ function App() {
       <main className="main">
         <Router />
       </main>
+      <Footer />
     </BrowserRouter>
   );
 }

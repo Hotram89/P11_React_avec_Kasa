@@ -34,4 +34,34 @@
     justify-content: center;
     color: white;
     font-weight: 400;
+    white-space: normal;
+
+}
+
+/**************************/
+@media (max-width: 599px) {
+
+    .heroImg {
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .heroImg img {
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .textOption {
+        font-size: 24px;
+        top: 1rem;
+        white-space: pre-line;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        font-weight: 300;
+    }
+    
+    .heroImg::before {
+        height: 110px;
+        border-radius: 10px;
+    }
 }
