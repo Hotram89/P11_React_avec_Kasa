@@ -46,24 +46,33 @@ class Carousel extends Component {
       <div>Aucune image</div>
     ) : (
       <div className="container-slider">
-        <BtnSlider
-          onclick={() => {
-            this.prevSlide();
-          }}
-          direction="prev"
-        />
+        {this.state.pictures.length > 2 ? (
+          <BtnSlider
+            onclick={() => {
+              this.prevSlide();
+            }}
+            direction="prev"
+          />
+        ) : (
+          ""
+        )}
+
         <div className="slide">
           <img
             src={this.state.pictures[this.state.currentSlideIndex]}
             alt="living room"
           />
         </div>
-        <BtnSlider
-          onclick={() => {
-            this.nextSlide();
-          }}
-          direction="next"
-        />
+        {this.state.pictures.length > 2 ? (
+          <BtnSlider
+            onclick={() => {
+              this.nextSlide();
+            }}
+            direction="next"
+          />
+        ) : (
+          ""
+        )}
       </div>
     );
   }

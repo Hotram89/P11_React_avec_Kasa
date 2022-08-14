@@ -21,18 +21,6 @@ const Navigation = () => {
           >
             <li className="menuItem">A propos</li>
           </NavLink>
-          {/* <NavLink
-            to="/rent/c67ab8a7"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
-          >
-            <li className="menuItem">Rent c67ab8a7</li>
-          </NavLink> */}
-          {/* <NavLink
-            to="/rent/nofound"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
-          >
-            <li className="menuItem">Rent nofound</li>
-          </NavLink> */}
         </ul>
       </header>
     </div>
