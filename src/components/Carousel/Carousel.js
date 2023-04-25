@@ -46,7 +46,7 @@ class Carousel extends Component {
       <div>Aucune image</div>
     ) : (
       <div className="container-slider">
-        {this.state.pictures.length > 2 ? (
+        {this.state.pictures.length > 1 ? (
           <BtnSlider
             onclick={() => {
               this.prevSlide();
@@ -63,7 +63,7 @@ class Carousel extends Component {
             alt="living room"
           />
         </div>
-        {this.state.pictures.length > 2 ? (
+        {this.state.pictures.length > 1 ? (
           <BtnSlider
             onclick={() => {
               this.nextSlide();
