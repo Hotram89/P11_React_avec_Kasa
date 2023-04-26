@@ -1,6 +1,5 @@
 import BtnSlider from "./BtnSlider";
 import "./Carousel.css";
-import ApiProvider from "data/ApiProvider";
 
 const { Component } = require("react");
 
