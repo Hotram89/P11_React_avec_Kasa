@@ -6,7 +6,7 @@ import Router from "./route/Router.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/P11_React_avec_Kasa">
       <Navigation />
       <main className="main">
         <Router />
